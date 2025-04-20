@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <!-- 设置字符编码 -->
+    <meta charset="UTF-8">
+    <!-- 设置网站图标 -->
+    <link rel="icon" href="/favicon.ico">
+    <!-- 设置视口，使网站在移动设备上正确显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO元标签 -->
+    <meta name="description" content="SUSTech-BIO iGEM团队Wiki页面，展示我们的合成生物学项目MINERAL">
+    <meta name="keywords" content="SUSTech, iGEM, 合成生物学, MINERAL">
+    <!-- 网站标题 -->
+    <title>MINERAL | SUSTech-BIO iGEM Wiki</title>
+    <!-- 添加Google字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <!-- 内联样式，确保页面铺满整个浏览器窗口 -->
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+      }
+      
+      #app {
+        width: 100%;
+        height: 100%;
+      }
+      
+      /* 确保在所有设备上没有不必要的滚动条和溢出 */
+      @media screen and (min-width: 1024px) {
+        body, #app {
+          max-width: 100vw;
+          margin: 0;
+          padding: 0;
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Vue应用将挂载到这个div元素上 -->
+    <div id="app"></div>
+    <!-- 导入Vue应用的主JavaScript文件 -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
